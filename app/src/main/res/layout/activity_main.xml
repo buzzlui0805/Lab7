@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnFadeIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:text="@string/fade_in" />
+
+    <Button
+        android:id="@+id/btnFadeOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnFadeIn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/fade_out" />
+
+    <Button
+        android:id="@+id/btnFadeInOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnFadeIn"
+        android:layout_alignParentRight="true"
+        android:text="@string/fade_in_out" />
+
+    <Button
+        android:id="@+id/btnZoomIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFadeIn"
+        android:layout_marginTop="20dp"
+        android:text="@string/zoom_in" />
+
+    <Button
+        android:id="@+id/btnZoomOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnZoomIn"
+        android:layout_alignParentRight="true"
+        android:text="@string/zoom_out" />
+
+    <Button
+        android:id="@+id/btnLeftRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnZoomIn"
+        android:layout_marginTop="20dp"
+        android:text="@string/left_right" />
+
+    <Button
+        android:id="@+id/btnRightLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnLeftRight"
+        android:layout_centerHorizontal="true"
+        android:text="@string/right_left" />
+
+    <Button
+        android:id="@+id/btnTopBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnLeftRight"
+        android:layout_alignParentRight="true"
+        android:text="@string/top_bottom" />
+
+    <Button
+        android:id="@+id/btnBounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLeftRight"
+        android:layout_marginTop="20dp"
+        android:text="@string/bounce" />
+
+    <Button
+        android:id="@+id/btnFlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnBounce"
+        android:layout_alignParentRight="true"
+        android:text="@string/flash" />
+
+    <Button
+        android:id="@+id/btnRotateLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBounce"
+        android:layout_marginTop="20dp"
+        android:text="@string/rotate_left" />
+
+    <Button
+        android:id="@+id/btnRotateRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnRotateLeft"
+        android:layout_alignParentRight="true"
+        android:text="@string/rotate_right" />
+
+    <SeekBar
+        android:id="@+id/seekBarSpeed"
+        android:max="5000"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRotateLeft"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvSeekBarSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/seekBarSpeed"
+        android:layout_alignParentRight="true"
+        android:text="TextView" />
+
+
+
+</RelativeLayout>
